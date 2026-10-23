@@ -137,7 +137,7 @@ The dashboard includes year-based filtering, year-over-year KPI comparisons, and
 
 **1. Executive Overview**
 
-![Executive Overview](images/executive_overview.png)
+![Executive Overview](images/executive_overview.PNG)
 
 - Provides a high-level view of overall business performance through six key metrics: Revenue, Gross Profit, Average Order Value, Sessions, Orders, and Conversion Rate.
 
@@ -145,7 +145,7 @@ The dashboard includes year-based filtering, year-over-year KPI comparisons, and
 
 **2. Acquisition & Conversion**
 
-![Acquisition & Conversion](images/acquisition_conversion.png)
+![Acquisition & Conversion](images/acquisition_conversion.PNG)
 
 - Evaluates the effectiveness of different traffic sources in generating revenue and converting visitors into customers. It also examines customer progression through the purchasing journey across desktop and mobile devices, helping identify potential conversion bottlenecks.
 
@@ -153,7 +153,7 @@ The dashboard includes year-based filtering, year-over-year KPI comparisons, and
 
 **3. Product & Sales Analysis**
 
-![Product & Sales Analysis](images/product_sales_analysis.png)
+![Product & Sales Analysis](images/product_sales_analysis.PNG)
 
 - Examines individual product performance through revenue contribution, return rates, and presence in two-item orders, helping identify differences in how products contribute to overall sales and purchasing behavior.
 
