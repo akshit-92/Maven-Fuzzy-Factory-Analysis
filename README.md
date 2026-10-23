@@ -87,7 +87,7 @@ The project followed a structured analytical approach, beginning with an explora
 
 **1. Mobile Conversion Underperformance Represented a Growth Opportunity**
 
-Analysis of 2014 website performance revealed a substantial conversion gap **(5.87%)** between desktop and mobile visitors.
+Analysis of 2014 website performance revealed a substantial conversion gap *(5.87%)* between desktop and mobile visitors.
 
 A hypothetical scenario assuming mobile visitors converted at the same rate as desktop visitors indicated:
 
@@ -158,3 +158,17 @@ The dashboard includes year-based filtering, year-over-year KPI comparisons, and
 - Examines individual product performance through revenue contribution, return rates, and presence in two-item orders, helping identify differences in how products contribute to overall sales and purchasing behavior.
 
 - The page also explores changes in single-item versus two-item purchasing patterns, frequently purchased product combinations, and monthly product revenue trends to understand how sales composition evolves over time.
+
+## Business Recommendations
+
+**1. Investigate the Low Mobile Conversion Rate**
+
+- The significant difference between desktop and mobile conversion rates suggests that improving mobile performance could help increase overall sales.
+
+- The website development team should investigate whether mobile users face difficulties while browsing products or completing purchases. Additional website interaction data would also help identify where the problems occur and what improvements might be necessary.
+
+**2. Encourage More Two-Item Purchases**
+
+- The increase in two-item orders contributed to higher average order values in 2014, making this an area worth exploring further.
+
+- Since **Original Mr. Fuzzy & Hudson River Mini Bear** and **Original Mr. Fuzzy &  Birthday Sugar Panda** accounted for approximately 69% of two-item orders, the business could experiment with promoting other product combinations, particularly those involving **Hudson River Mini Bear**, to see whether they encourage additional purchases.
