@@ -87,7 +87,7 @@ The project followed a structured analytical approach, beginning with an explora
 
 **1. Mobile Conversion Underperformance Represented a Growth Opportunity**
 
-Analysis of 2014 website performance revealed a substantial conversion gap between desktop and mobile visitors.
+Analysis of 2014 website performance revealed a substantial conversion gap **(5.87%)** between desktop and mobile visitors.
 
 A hypothetical scenario assuming mobile visitors converted at the same rate as desktop visitors indicated:
 
@@ -128,3 +128,4 @@ The analysis revealed two distinct periods:
 - August–December 2014: The conversion rate increased to 5.15%, with 100% of recorded sessions originating from desktop devices.
 
 Given the substantial conversion gap between desktop and mobile visitors, this shift in device composition provides a plausible explanation for socialbook's improved overall conversion performance in the later half of the year.
+
