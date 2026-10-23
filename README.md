@@ -129,3 +129,32 @@ The analysis revealed two distinct periods:
 
 Given the substantial conversion gap between desktop and mobile visitors, this shift in device composition provides a plausible explanation for socialbook's improved overall conversion performance in the later half of the year.
 
+## Power BI Dashboard
+
+Developed an interactive, three-page Power BI dashboard to visualize Maven Fuzzy Factory's business performance from March 2012 to March 2015.
+
+The dashboard includes year-based filtering, year-over-year KPI comparisons, and interactive visualizations across three analytical areas.
+
+**1. Executive Overview**
+
+![Executive Overview](images/executive_overview.png)
+
+- Provides a high-level view of overall business performance through six key metrics: Revenue, Gross Profit, Average Order Value, Sessions, Orders, and Conversion Rate.
+
+- Monthly trend visualizations help track changes in financial performance, website traffic, and conversion efficiency.
+
+**2. Acquisition & Conversion**
+
+![Acquisition & Conversion](images/acquisition_conversion.png)
+
+- Evaluates the effectiveness of different traffic sources in generating revenue and converting visitors into customers. It also examines customer progression through the purchasing journey across desktop and mobile devices, helping identify potential conversion bottlenecks.
+
+- Additionally, the page compares homepage variants based on traffic volume and bounce rates to provide insights into visitor engagement.
+
+**3. Product & Sales Analysis**
+
+![Product & Sales Analysis](images/product_sales_analysis.png)
+
+- Examines individual product performance through revenue contribution, return rates, and presence in two-item orders, helping identify differences in how products contribute to overall sales and purchasing behavior.
+
+- The page also explores changes in single-item versus two-item purchasing patterns, frequently purchased product combinations, and monthly product revenue trends to understand how sales composition evolves over time.
