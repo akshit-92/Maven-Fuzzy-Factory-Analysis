@@ -87,15 +87,19 @@ The project followed a structured analytical approach, beginning with an explora
 
 **1. Mobile Conversion Underperformance Represented a Growth Opportunity**
 
-Analysis of 2014 website performance revealed a substantial conversion gap *(5.87%)* between desktop and mobile visitors.
+Analysis of website performance revealed a persistent conversion gap between desktop and mobile visitors.
 
-A hypothetical scenario assuming mobile visitors converted at the same rate as desktop visitors indicated:
+- 2013: Desktop conversion stood at 8.02%, compared to 3.12% for mobile — a gap of 4.90 percentage points.
+- 2014: Desktop conversion increased to 9.18%, while mobile conversion reached only 3.31%, widening the gap to 5.87 percentage points.
+
+While conversion rates improved across both devices, mobile improvements were considerably smaller, causing the conversion gap to widen.
+
+A hypothetical scenario assuming mobile visitors converted at the same rate as desktop visitors in 2014 indicated:
 
 - 4,572 additional orders could have been generated.
 - Approximately $291K in additional revenue, calculated using the overall 2014 average order value.
-- This represented approximately 27% of actual 2014 revenue.
-  
-The findings suggest that improving mobile conversion efficiency could represent a growth opportunity. However, additional website behavior and usability data would be required to identify the underlying causes of the conversion gap.
+
+The findings suggest that improving mobile conversion efficiency could represent a significant growth opportunity. However, additional website behavior and usability data would be required to identify the underlying causes of the conversion gap.
 
 **2. Growth in Two-Item Orders Contributed to Higher Average Order Value**
 
@@ -140,7 +144,7 @@ The dashboard includes year-based filtering, year-over-year KPI comparisons, and
 ![Executive Overview](images/executive_overview.PNG)
 
 - Provides a high-level view of overall business performance through six key metrics: Revenue, Gross Profit, Average Order Value, Sessions, Orders, and Conversion Rate.
-
+  
 - Monthly trend visualizations help track changes in financial performance, website traffic, and conversion efficiency.
 
 **2. Acquisition & Conversion**
@@ -148,7 +152,7 @@ The dashboard includes year-based filtering, year-over-year KPI comparisons, and
 ![Acquisition & Conversion](images/acquisition_conversion.PNG)
 
 - Evaluates the effectiveness of different traffic sources in generating revenue and converting visitors into customers. It also examines customer progression through the purchasing journey across desktop and mobile devices, helping identify potential conversion bottlenecks.
-
+  
 - Additionally, the page compares homepage variants based on traffic volume and bounce rates to provide insights into visitor engagement.
 
 **3. Product & Sales Analysis**
@@ -156,7 +160,7 @@ The dashboard includes year-based filtering, year-over-year KPI comparisons, and
 ![Product & Sales Analysis](images/product_sales_analysis.PNG)
 
 - Examines individual product performance through revenue contribution, return rates, and presence in two-item orders, helping identify differences in how products contribute to overall sales and purchasing behavior.
-
+  
 - The page also explores changes in single-item versus two-item purchasing patterns, frequently purchased product combinations, and monthly product revenue trends to understand how sales composition evolves over time.
 
 ## Business Recommendations
@@ -164,11 +168,11 @@ The dashboard includes year-based filtering, year-over-year KPI comparisons, and
 **1. Investigate the Low Mobile Conversion Rate**
 
 - The significant difference between desktop and mobile conversion rates suggests that improving mobile performance could help increase overall sales.
-
+  
 - The website development team should investigate whether mobile users face difficulties while browsing products or completing purchases. Additional website interaction data would also help identify where the problems occur and what improvements might be necessary.
 
 **2. Encourage More Two-Item Purchases**
 
 - The increase in two-item orders contributed to higher average order values in 2014, making this an area worth exploring further.
-
+  
 - Since **Original Mr. Fuzzy & Hudson River Mini Bear** and **Original Mr. Fuzzy &  Birthday Sugar Panda** accounted for approximately 69% of two-item orders, the business could experiment with promoting other product combinations, particularly those involving **Hudson River Mini Bear**, to see whether they encourage additional purchases.
