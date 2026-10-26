@@ -176,3 +176,29 @@ The dashboard includes year-based filtering, year-over-year KPI comparisons, and
 - The increase in two-item orders contributed to higher average order values in 2014, making this an area worth exploring further.
   
 - Since **Original Mr. Fuzzy & Hudson River Mini Bear** and **Original Mr. Fuzzy &  Birthday Sugar Panda** accounted for approximately 69% of two-item orders, the business could experiment with promoting other product combinations, particularly those involving **Hudson River Mini Bear**, to see whether they encourage additional purchases.
+
+## Repository Structure
+```text
+Maven-Fuzzy-Factory-Analysis/
+│
+├── README.md
+│
+├── dataset/
+│   ├── website_sessions.csv
+│   ├── website_pageviews.csv
+│   ├── orders.csv
+│   ├── order_items.csv
+│   ├── order_item_refunds.csv
+│   └── products.csv
+│
+├── SQL/
+│   └── maven_fuzzy_factory.sql
+│
+├── Power BI/
+│   └── maven_fuzzy_factory.pbix
+│
+└── images/
+    ├── executive_overview.PNG
+    ├── acquisition_conversion.PNG
+    └── product_sales_analysis.PNG
+```
