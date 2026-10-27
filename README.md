@@ -1,4 +1,4 @@
-# Maven Fuzzy Factory | E-Commerce Data Analytics
+# Maven Fuzzy Factory | E-Commerce Data Analysis
 
 ## Project Overview
 
