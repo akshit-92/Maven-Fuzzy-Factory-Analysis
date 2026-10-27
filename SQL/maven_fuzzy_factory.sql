@@ -5,7 +5,7 @@
 
 -- Tool: MySQL
 
--- Overview :
+-- Overview:
 -- This file contains SQL queries used to investigate website
 -- traffic, conversion performance, customer purchasing behavior,
 -- and product combinations across different business periods.
@@ -17,10 +17,10 @@
 -- _________________________________________________________________________________________________________________________________  
 
 -- 1. Traffic Source Performance
--- Objective : Evaluate how effectively different traffic sources convert visitors into customers and generate revenue.
--- Analysis : Compared orders, conversion rates, and revenue per session across traffic sources.
--- Reference : Power BI → Acquisition & Conversion → Traffic Source Performance; 
---             README → Key Findings → Socialbook's Conversion Performance Improved Following a Shift in Device Composition.
+-- Objective: Evaluate how effectively different traffic sources convert visitors into customers and generate revenue.
+-- Analysis: Compared orders, conversion rates, and revenue per session across traffic sources.
+-- Reference: Power BI → Acquisition & Conversion → Traffic Source Performance; 
+--            README → Key Findings → Socialbook's Conversion Performance Improved Following a Shift in Device Composition.
 
 SELECT YEAR(w.created_at) AS year, w.utm_source, 
 COUNT(o.order_id) AS orders, 
@@ -36,10 +36,10 @@ ORDER BY year, utm_source;
 -- _________________________________________________________________________________________________________________________________
 
 -- 2. Socialbook Conversion Performance & Device Mix
--- Objective : Investigate Socialbook's low conversion rate and its improvement during the latter half of 2014.
--- Analysis : Examined monthly sessions, orders, conversion rates, and revenue per session by device type to understand 
---            changes in traffic composition and conversion performance.
--- Reference : README → Key Findings → Socialbook's Conversion Performance Improved Following a Shift in Device Composition.
+-- Objective: Investigate Socialbook's low conversion rate and its improvement during the latter half of 2014.
+-- Analysis: Examined monthly sessions, orders, conversion rates, and revenue per session by device type to understand 
+--           changes in traffic composition and conversion performance.
+-- Reference: README → Key Findings → Socialbook's Conversion Performance Improved Following a Shift in Device Composition.
 
 SELECT YEAR(w.created_at) AS year, MONTH(w.created_at) AS month, w.utm_source, w.device_type,
 COUNT(w.website_session_id) AS sessions,
@@ -56,17 +56,17 @@ ORDER BY year, month;
 -- _________________________________________________________________________________________________________________________________
 
 -- 3. Website Conversion Funnel Analysis by Device
--- Objective : Compare desktop and mobile purchasing journeys to identify stages with significant drop-offs and potential 
---             conversion bottlenecks.
--- Analysis : Calculated the percentage of sessions reaching each funnel stage relative to the previous stage and the initial
---            stage, separately for desktop and mobile devices.
--- Reference : Power BI → Acquisition & Conversion → Desktop and Mobile Conversion Rate Breakdown; 
---             README → Key Findings → Mobile Conversion Underperformance Represented a Growth Opportunity.
+-- Objective: Compare desktop and mobile purchasing journeys to identify stages with significant drop-offs and potential 
+--            conversion bottlenecks.
+-- Analysis: Calculated the percentage of sessions reaching each funnel stage relative to the previous stage and the initial
+--           stage, separately for desktop and mobile devices.
+-- Reference: Power BI → Acquisition & Conversion → Desktop and Mobile Conversion Rate Breakdown; 
+--            README → Key Findings → Mobile Conversion Underperformance Represented a Growth Opportunity.
 
--- Dataset Observations : Pages visited in any session follow a fixed sequence (any homepage variant → products → 
---                        product detail → cart → shipping → payment → order confirmation). The session can end at any stage, 
---                        but begins only on any homepage variant and progresses in the given sequence. Additionally, any given 
---                        page is visited only once during a session.
+-- Dataset Observations: Pages visited in any session follow a fixed sequence (any homepage variant → products → 
+--                       product detail → cart → shipping → payment → order confirmation). The session can end at any stage, 
+--                       but begins only on any homepage variant and progresses in the given sequence. Additionally, any given 
+--                       page is visited only once during a session.
 
 WITH tab AS (
    SELECT s.device_type, 
@@ -103,10 +103,10 @@ ORDER BY device_type, sequence;
 -- _________________________________________________________________________________________________________________________________
 
 -- 4. Homepage Variant Performance & Bounce Rate
--- Objective : Evaluate visitor engagement across homepage variants and compare bounce rates between desktop and mobile devices.
--- Analysis : Calculated total sessions and bounce rates for homepage variants, grouped by year and device type, to identify 
---            differences in visitor engagement.
--- Reference : Power BI → Acquisition & Conversion → Total Sessions and Bounce Rate by Homepage Variants.
+-- Objective: Evaluate visitor engagement across homepage variants and compare bounce rates between desktop and mobile devices.
+-- Analysis: Calculated total sessions and bounce rates for homepage variants, grouped by year and device type, to identify 
+--           differences in visitor engagement.
+-- Reference: Power BI → Acquisition & Conversion → Total Sessions and Bounce Rate by Homepage Variants.
 
 WITH tab AS (
    SELECT *,
@@ -131,12 +131,12 @@ ORDER BY year, device_type, pageview_url;
 
 -- _________________________________________________________________________________________________________________________________
 
--- 5. Monthly Order Mix : Single vs Two Items
--- Objective : Examine changes in customer purchasing behavior by comparing the proportion of single-item and two-item orders 
---             over time.
--- Analysis : Calculated the monthly percentage of orders containing one or two items to identify shifts in purchasing patterns.
--- Reference : Power BI → Product & Sales Analysis → Monthly Order Mix : Single vs Two Items; 
---             README → Key Findings → Growth in Two-Item Orders.
+-- 5. Monthly Order Mix: Single vs Two Items
+-- Objective: Examine changes in customer purchasing behavior by comparing the proportion of single-item and two-item orders 
+--            over time.
+-- Analysis: Calculated the monthly percentage of orders containing one or two items to identify shifts in purchasing patterns.
+-- Reference: Power BI → Product & Sales Analysis → Monthly Order Mix: Single vs Two Items; 
+--            README → Key Findings → Growth in Two-Item Orders.
 
 SELECT YEAR(created_at) AS year, MONTH(created_at) AS month, 
 CONCAT(ROUND(AVG(CASE WHEN items_purchased=1 THEN 1 ELSE 0 END)*100,2), '%') AS one_item_orders,
@@ -149,11 +149,11 @@ ORDER BY year, month;
 -- _________________________________________________________________________________________________________________________________
 
 -- 6. Best-Selling Product Combinations
--- Objective : Identify the most frequently purchased product combinations and their contribution to two-item orders.
--- Analysis : Identified product pairs from orders containing exactly two items, calculated the number of orders and percentage
---            share of total two-item orders for each combination.
--- Reference : Power BI → Product & Sales Analysis → Best-Selling Product Combinations; 
---             README → Key Findings → Growth in Two-Item Orders.
+-- Objective: Identify the most frequently purchased product combinations and their contribution to two-item orders.
+-- Analysis: Identified product pairs from orders containing exactly two items, calculated the number of orders and percentage
+--           share of total two-item orders for each combination.
+-- Reference: Power BI → Product & Sales Analysis → Best-Selling Product Combinations; 
+--            README → Key Findings → Growth in Two-Item Orders.
 
 SELECT *, CONCAT(ROUND(total_orders/SUM(total_orders) OVER ()*100,2), '%') AS share_of_two_item_orders
 FROM (
